@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue.js Homework 1</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <!-- <script src="task1.js" defer></script> -->
+    <script src="task2.js" defer></script>
+</head>
+
+<body>
+    <div id="app">
+        <!-- Задание 1 -->
+        <!-- <button @click="reverseText">{{btnText}}</button> -->
+
+        <!-- Задание 2  -->
+        <div v-for="element in list" :key="element.id" class="list-box">
+            <p>{{element.id}}: {{element.text}}</p>
+            <button @click="removeElement(element)">Удалить</button>
+        </div>
+        <br>
+        <button @click="addElement">Добавить</button>
+
+    </div>
+</body>
+
+</html>
