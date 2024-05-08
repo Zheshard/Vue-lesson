@@ -1,12 +1,13 @@
 $widthSite: 1200px;
-$colorSelectLightGray: #4D5053;   
-$colorSelectBrown: #CDA274;   
+$colorSelectLightGray: #4D5053;
+$colorSelectBrown: #CDA274;
 $colorSelectGray: #292F36;
 
 @import 'null_style';
 @import 'mixins';
 @import 'style_fonts';
 @import 'home_page';
+@import 'blog';
 
 .center {
     @include center ($widthSite);

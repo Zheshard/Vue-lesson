@@ -164,7 +164,7 @@ body {
   letter-spacing: 0%;
 }
 
-.banner__title, .logo__title {
+.post__title, .title-blog, .banner_blog__title, .banner__title, .logo__title {
   font-family: "DM Serif Display";
   line-height: 125%;
   letter-spacing: 0%;
@@ -381,8 +381,12 @@ body {
   margin: 0 auto 52px;
 }
 .blog__articles {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 33.333%);
   gap: 27px;
+}
+.blog__title {
+  margin-bottom: 30px;
 }
 
 .article {
@@ -397,6 +401,12 @@ body {
   position: relative;
   line-height: 0;
   margin-bottom: 21px;
+  overflow: hidden;
+  height: 289.77px;
+}
+.article__picture img {
+  width: 100%;
+  height: 100%;
 }
 .article__picture span {
   position: absolute;
@@ -496,6 +506,76 @@ body {
 }
 .footer__contact span a {
   color: #4D5053;
+}
+
+.banner_blog {
+  max-height: 356px;
+  padding: 178px 0 0 0;
+}
+.banner_blog__heading {
+  text-align: center;
+  padding: 41px 78px;
+  border-radius: 37px 37px 0px 0px;
+  background: rgb(255, 255, 255);
+  width: 503px;
+  margin: 0 auto;
+}
+.banner_blog__title {
+  color: #292F36;
+  font-size: 50px;
+}
+.banner_blog__subtitle {
+  color: #4D5053;
+  font-size: 22px;
+  line-height: 150%;
+  letter-spacing: 1%;
+}
+
+.latest-post {
+  padding: 200px 0 0 55px;
+}
+.latest-post__title {
+  margin-bottom: 25px;
+}
+
+.title-blog {
+  color: #292F36;
+  font-size: 50px;
+  letter-spacing: 2%;
+  -moz-text-align-last: left;
+       text-align-last: left;
+}
+
+.post {
+  display: flex;
+  padding: 22px;
+  box-sizing: border-box;
+  border: 1px solid rgb(231, 231, 231);
+  border-radius: 62px;
+  box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
+}
+.post__image {
+  max-width: 569px;
+}
+.post__image img {
+  width: 100%;
+}
+.post__text-block {
+  padding: 51.5px 34px 51.5px 65px;
+  max-width: 569px;
+}
+.post__title {
+  color: #292F36;
+  font-size: 25px;
+  letter-spacing: 2%;
+  margin-bottom: 22px;
+}
+.post__text p {
+  color: #4D5053;
+  font-size: 22px;
+  line-height: 150%;
+  letter-spacing: 1%;
+  margin-bottom: 40px;
 }
 
 .center {
