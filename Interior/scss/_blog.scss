@@ -1,6 +1,10 @@
 .banner_blog {
-    max-height: 356px;
+    min-height: 356px;
     padding: 178px 0 0 0;
+
+    & img {
+        object-fit: cover;
+    }
 
     &__heading {
         text-align: center;
@@ -9,6 +13,10 @@
         background: rgb(255, 255, 255);
         width: 503px;
         margin: 0 auto;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
     }
 
     &__title {
@@ -26,7 +34,7 @@
 }
 
 .latest-post {
-    padding: 200px 0 0 55px;
+    padding: 200px 0 55px 0;
 
     &__title {
         margin-bottom: 25px;
