@@ -33,7 +33,7 @@
                     </div>
                 </aside>
             </div>
-        </div>
+    </div>
   </template>
 
 <script>
