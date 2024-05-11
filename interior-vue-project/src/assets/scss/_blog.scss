@@ -1,0 +1,88 @@
+.banner_blog {
+    min-height: 356px;
+    padding: 178px 0 0 0;
+
+    & img {
+        object-fit: cover;
+    }
+
+    &__heading {
+        text-align: center;
+        padding: 41px 78px;
+        border-radius: 37px 37px 0px 0px;
+        background: rgb(255, 255, 255);
+        width: 503px;
+        margin: 0 auto;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    &__title {
+        color: $colorSelectGray;
+        @extend %dm-serif-display-regular;
+        font-size: 50px;
+    }
+
+    &__subtitle {
+        color: $colorSelectLightGray;
+        font-size: 22px;
+        line-height: 150%;
+        letter-spacing: 1%;
+    }
+}
+
+.latest-post {
+    padding: 200px 0 55px 0;
+
+    &__title {
+        margin-bottom: 25px;
+    }
+}
+
+.title-blog {
+    color: $colorSelectGray;
+    @extend %dm-serif-display-regular;
+    font-size: 50px;
+    letter-spacing: 2%;
+    text-align-last: left;
+}
+
+.post {
+    display: flex;
+    padding: 22px;
+    box-sizing: border-box;
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: 62px;
+    box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
+
+    &__image {
+        max-width: 569px;
+
+        & img {
+            width: 100%;
+        }
+    }
+
+    &__text-block {
+        padding: 51.5px 34px 51.5px 65px;
+        max-width: 569px;
+    }
+
+    &__title {
+        color: $colorSelectGray;
+        @extend %dm-serif-display-regular;
+        font-size: 25px;
+        letter-spacing: 2%;
+        margin-bottom: 22px;
+    }
+
+    &__text p {
+        color: $colorSelectLightGray;
+        font-size: 22px;
+        line-height: 150%;
+        letter-spacing: 1%;
+        margin-bottom: 40px;
+    }
+}
