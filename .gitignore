@@ -23,11 +23,8 @@ seminar_4_5/
 seminar_5/
 seminar_6/
 seminar_7/
-Interior/
-interior-vue/
-interior-vue-project/
 .vscode/
-Interior/src
+project/
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
